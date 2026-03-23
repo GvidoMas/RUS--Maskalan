@@ -59,9 +59,8 @@ void loop() {
 
   if (distance() != 0 && !isInProgress) {
     digitalWrite(ledDistance, HIGH);
-    delay(200);
+    delay(500);
     digitalWrite(ledDistance, LOW);
-    delay(100);
   }
 
   delay(10);

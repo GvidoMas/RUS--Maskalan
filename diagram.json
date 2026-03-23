@@ -4,7 +4,13 @@
   "editor": "wokwi",
   "parts": [
     { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -28.8, "left": 360.04, "attrs": {} },
-    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -36.9, "left": 159.1, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -36.9,
+      "left": 159.1,
+      "attrs": { "distance": "74" }
+    },
     {
       "type": "wokwi-pushbutton",
       "id": "btn1",
@@ -124,7 +130,8 @@
       "left": 604.25,
       "rotate": 90,
       "attrs": { "value": "1000" }
-    }
+    },
+    { "type": "wokwi-logic-analyzer", "id": "logic1", "top": -143.65, "left": 854.4, "attrs": {} }
   ],
   "connections": [
     [ "esp:TX", "$serialMonitor:RX", "", [] ],
@@ -159,7 +166,16 @@
     [ "led3:A", "esp:5", "green", [ "v0" ] ],
     [ "led5:C", "r8:1", "green", [ "v0" ] ],
     [ "led5:A", "esp:22", "green", [ "v0" ] ],
-    [ "r8:2", "esp:GND.2", "green", [ "h0", "v56.4" ] ]
+    [ "r8:2", "esp:GND.2", "green", [ "h0", "v56.4" ] ],
+    [ "logic1:GND", "esp:CMD", "black", [ "h-499.2", "v220.8" ] ],
+    [ "btn1:2.r", "logic1:D0", "green", [ "h48.2", "v-182.2" ] ],
+    [ "btn2:2.r", "logic1:D1", "green", [ "h48.2", "v-220.6" ] ],
+    [ "btn3:2.r", "logic1:D2", "green", [ "h48.2", "v-259" ] ],
+    [ "led1:A", "logic1:D3", "green", [ "v0" ] ],
+    [ "led2:A", "logic1:D4", "green", [ "v0" ] ],
+    [ "led3:A", "logic1:D5", "green", [ "v0" ] ],
+    [ "led4:A", "logic1:D6", "green", [ "v0" ] ],
+    [ "led5:A", "logic1:D7", "green", [ "v0" ] ]
   ],
   "dependencies": {}
 }
