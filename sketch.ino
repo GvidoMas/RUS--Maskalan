@@ -66,10 +66,20 @@ void loop() {
   delay(10);
 }
 
+/**
+ * @brief Funkcija koja se poziva aktivacijom timer-a.
+ *
+ * Mjenja flag timerFlag u TRUE zbog čega će se u loop() funkciji pozvati funkcija handleTimer()
+ */
 void onTimer() {
   timerFlag = true;
 }
 
+/**
+ * @brief Funkcija koja se poziva ako je timerFlak TRUE.
+ *
+ * Provjerava da li je neki prekid u tijeku i ako nije pali ledTimer lampicu na 500ms te resetira timerFlag u FALSE.
+ */
 void handleTimer() {
   isInProgress = true;
 
@@ -81,24 +91,46 @@ void handleTimer() {
   isInProgress = false;
 }
 
+/**
+ * @brief Funkcija koja se poziva prekidom izazvanim pritiskom gumba 1.
+ *
+ * Poziva funkciju handleBtnPress() i prosljeđuje indeks lampice 1.
+ */
 void INT1() {
   if(!isInProgress){
     handleBtnPress(0);
   }
 }
 
+/**
+ * @brief Funkcija koja se poziva prekidom izazvanim pritiskom gumba 2.
+ *
+ * Poziva funkciju handleBtnPress() i prosljeđuje indeks lampice 2.
+ */
 void INT2() {
   if(!isInProgress){
     handleBtnPress(1);
   }
 }
 
+/**
+ * @brief Funkcija koja se poziva prekidom izazvanim pritiskom gumba 3.
+ *
+ * Poziva funkciju handleBtnPress() i prosljeđuje indeks lampice 3.
+ */
 void INT3() {
   if(!isInProgress){
     handleBtnPress(2);
   }
 }
 
+/**
+ * @brief Funkcija koja se poziva iz prekida povezanih sa gumbima.
+ *
+ * Radi debounce gumba te postavlja btnFlag pritisnutog gumba u TRUE kako bi se lapica tog gumba upalila.
+ *
+ * @param [in] int btnNumber - indeks gumba za koji treba upaliti lampicu
+ */
 void handleBtnPress(int btnNumber) {
   if (millis() - lastInterruptTime > debounceDelay) {
     btnFlags[btnNumber] = true;
@@ -106,6 +138,11 @@ void handleBtnPress(int btnNumber) {
   }
 }
 
+/**
+ * @brief Funkcija koja se poziva u loop() funkciji te pali lampice sa postavljenim flagom.
+ *
+ * Prolazi kroz btnFlags niz i mjenja stanje lapice ako je flag postavljen u TRUE
+ */
 void handleButtons() {
   isInProgress = true;
 
@@ -131,6 +168,13 @@ void handleButtons() {
   isInProgress = false;
 }
 
+/**
+ * @brief Funkcija koja očitava udaljenost prepreke.
+ *
+ * Poziva se u loop() funkciji te očitava udaljenost do prepreke.
+ *
+ * @return float vrijednost udaljenosti do prepreke
+ */
 float distance() {
   digitalWrite(trig, LOW);
   delayMicroseconds(2);
