@@ -1,3 +1,9 @@
+/**
+ * @file lab1.ino
+ * @brief RUS - Lab1
+ * @details Rješenje 1. laboratorijske vježbe
+ */
+
 #define btn1 16
 #define btn2 2
 #define btn3 4
