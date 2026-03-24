@@ -1,0 +1,15 @@
+<map id="setup" name="setup">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,64,105"/>
+<area shape="rect" id="Node000002" href="$d1/dd7/lab1_8ino.html#adaba8d46a20dae52959632ebf4301cb2" title="Funkcija koja se poziva prekidom izazvanim pritiskom gumba 1." alt="" coords="124,5,176,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,77,111,40,116,36,119,40,113,44,57,82"/>
+<area shape="rect" id="Node000004" href="$d1/dd7/lab1_8ino.html#a03c11ae18a309833f325c8385d785185" title="Funkcija koja se poziva prekidom izazvanim pritiskom gumba 2." alt="" coords="124,55,176,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="64,84,110,73,111,79,65,89"/>
+<area shape="rect" id="Node000005" href="$d1/dd7/lab1_8ino.html#a2ec43f875a5939d9eef485c1dbc66fb6" title="Funkcija koja se poziva prekidom izazvanim pritiskom gumba 3." alt="" coords="124,104,176,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="65,96,111,106,110,111,64,101"/>
+<area shape="rect" id="Node000006" href="$d1/dd7/lab1_8ino.html#a68b68e72a8323bb91995b38e98cf7d3e" title="Funkcija koja se poziva aktivacijom timer&#45;a." alt="" coords="112,153,188,179"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="57,103,119,143,116,148,54,108"/>
+<area shape="rect" id="Node000003" href="$d1/dd7/lab1_8ino.html#a50b76518ca83f99aac823bb1f98f0466" title="Funkcija koja se poziva iz prekida povezanih sa gumbima." alt="" coords="236,55,359,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="177,24,246,48,244,53,176,29"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="177,65,222,65,222,70,177,70"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="176,106,244,82,246,87,177,111"/>
+</map>

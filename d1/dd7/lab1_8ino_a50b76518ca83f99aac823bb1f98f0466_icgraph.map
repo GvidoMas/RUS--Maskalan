@@ -1,0 +1,13 @@
+<map id="handleBtnPress" name="handleBtnPress">
+<area shape="rect" id="Node000001" title="Funkcija koja se poziva iz prekida povezanih sa gumbima." alt="" coords="212,55,335,80"/>
+<area shape="rect" id="Node000002" href="$d1/dd7/lab1_8ino.html#adaba8d46a20dae52959632ebf4301cb2" title="Funkcija koja se poziva prekidom izazvanim pritiskom gumba 1." alt="" coords="112,5,164,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,52,163,30,165,25,226,47"/>
+<area shape="rect" id="Node000004" href="$d1/dd7/lab1_8ino.html#a03c11ae18a309833f325c8385d785185" title="Funkcija koja se poziva prekidom izazvanim pritiskom gumba 2." alt="" coords="112,55,164,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,70,164,70,164,65,199,65"/>
+<area shape="rect" id="Node000005" href="$d1/dd7/lab1_8ino.html#a2ec43f875a5939d9eef485c1dbc66fb6" title="Funkcija koja se poziva prekidom izazvanim pritiskom gumba 3." alt="" coords="112,104,164,129"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="226,87,165,110,163,105,224,82"/>
+<area shape="rect" id="Node000003" href="$d1/dd7/lab1_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title=" " alt="" coords="5,55,64,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,38,63,57,61,52,99,34"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="98,70,64,70,64,65,98,65"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="99,101,61,82,63,78,101,96"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="loop" name="loop">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,56,80"/>
+<area shape="rect" id="Node000002" href="$d1/dd7/lab1_8ino.html#a1c1b8a0acae8658c9d1d96e737703081" title="Funkcija koja očitava udaljenost prepreke." alt="" coords="123,5,201,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="55,56,114,33,116,38,57,61"/>
+<area shape="rect" id="Node000003" href="$d1/dd7/lab1_8ino.html#ab74e4231b3ed8977a26cc746ccef61a8" title="Funkcija koja se poziva u loop() funkciji te pali lampice sa postavljenim flagom." alt="" coords="104,55,220,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="56,65,90,65,90,70,56,70"/>
+<area shape="rect" id="Node000004" href="$d1/dd7/lab1_8ino.html#a2bbe07ea6c4933d5dd79621e5e9bfda1" title="Funkcija koja se poziva ako je timerFlak TRUE." alt="" coords="110,104,214,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="57,74,116,97,114,102,55,79"/>
+</map>
