@@ -10,6 +10,7 @@ GENERATE_LATEX         = NO
 # Source files to document
 INPUT                  = Lab1
 FILE_PATTERNS          = *.c *.h *.ino
+EXTENSION_MAPPING      = ino=c
 RECURSIVE              = YES
 
 # Tell Doxygen to document everything
