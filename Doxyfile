@@ -22,7 +22,7 @@ HIDE_UNDOC_MEMBERS     = NO
 HIDE_UNDOC_CLASSES     = NO
 
 # Input
-INPUT                  = ./src
+INPUT                  = ./Lab1
 FILE_PATTERNS          = *.c *.cpp *.h *.hpp
 RECURSIVE              = YES
 EXCLUDE                = 
