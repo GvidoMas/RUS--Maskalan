@@ -9,7 +9,7 @@ void activateLed() {
   digitalWrite(led, HIGH);
 
   int startTime = millis();
-  while(millis() - startTimme < 3000) {}
+  while(millis() - startTime < 3000) {}
   
   digitalWrite(led, LOW);
 
@@ -22,29 +22,32 @@ void handleWakeup() {
     if (cause == ESP_SLEEP_WAKEUP_TIMER) {
         Serial.println("Timer wakeup");
     } else {
-        Serial.println("Prvo pokretanje");
+        Serial.println(cause);
     }
 }
 
 void sleep() {
-  esp_sleep_enable_timer_wakeup(10 * 1000000);
+  Serial.println("Sleep start");
+  Serial.flush();
+  delay(500);
+  yield();
+
   esp_deep_sleep_start();
 }
 
 void setup() {
   Serial.begin(115200);
+  delay(1000);
 
   WiFi.mode(WIFI_OFF);
   btStop();
   
   pinMode(led, OUTPUT);
 
+  esp_sleep_enable_timer_wakeup(10 * 1000000);
+
   handleWakeup();
   activateLed();
-
-  Serial.flush();
-  delay(100);
-
   sleep();
 }
 
