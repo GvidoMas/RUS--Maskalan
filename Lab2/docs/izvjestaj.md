@@ -21,7 +21,7 @@ Bouncing je fenommen do kojega dolazi kod korišštenja fizičkih tipkala koja s
 Kako bi to riješili radimo debouncing, odnosno dodajemo mali delay unutar handleWakeup koda kako bi dali tipkalu vremena da se  smiri i tako onemogućili slučajne ponovne aktivacije radi "bouncing-a".
 
 ## Teorijsko trajanje baterije
-
+Ako pretpostavimmo da uređaj troši oko 50mA struje dok je aktivan i 0.01mA u deep sleep-u te uzmemo da je u sleep modu 10 sekundi a aktivan 4 sekunde (3 za LED delay + nekoliko kraćih delay-eva zbog debouncinga, cekanja da se upali serial mmonitor, itd.) dobijemo racunicu da je prosjecna potrošnj struje oko 14.3mA. Iz toga dobivamo da bi baterija trebala potrajati oko 175 sati, što je oko tjedan dana rada.
 
 | Stavka   | Odgovor  |
 |----------|----------|
