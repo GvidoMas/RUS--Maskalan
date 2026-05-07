@@ -49,6 +49,9 @@ void setup() {
   pinMode(led, OUTPUT);
   pinMode(btn, INPUT_PULLUP);
 
+  gpio_pullup_en(GPIO_NUM_2);
+  gpio_pulldown_dis(GPIO_NUM_2);
+
   esp_sleep_enable_ext0_wakeup(GPIO_NUM_2, 1);
 
   handleWakeup();
