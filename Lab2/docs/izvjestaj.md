@@ -35,3 +35,5 @@ Kako bi to riješili radimo debouncing, odnosno dodajemo mali delay unutar handl
 
 
 ## Diajgrammi stanja
+![Signals](https://github.com/GvidoMas/RUS--Maskalan/blob/main/Lab2/docs/basic.png)
+![Signals](https://github.com/GvidoMas/RUS--Maskalan/blob/main/Lab2/doccs/a.png)
