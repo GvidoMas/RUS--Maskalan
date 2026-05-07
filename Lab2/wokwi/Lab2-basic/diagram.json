@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Lab2",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 15.6, "left": 119, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "esp:GND.1", "led1:C", "black", [ "h0" ] ],
+    [ "esp:D4", "led1:A", "green", [ "h0" ] ]
+  ],
+  "dependencies": {},
+  "serialMonitor": { "display": "always" }
+}
